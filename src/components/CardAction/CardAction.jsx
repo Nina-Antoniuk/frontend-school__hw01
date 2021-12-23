@@ -4,7 +4,6 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 import { PropTypes } from 'prop-types';
-// eslint-disable-next-line import/no-unresolved
 import s from './CardAction.module.scss';
 
 const CardAction = function CardAction({ auth, authStats, views, comments }) {

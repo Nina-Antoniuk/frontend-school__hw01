@@ -3,7 +3,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { v4 as uuid } from 'uuid';
 import { PropTypes } from 'prop-types';
-// eslint-disable-next-line import/no-unresolved
 import s from './CardContentInfo.module.scss';
 
 const CardContentInfo = function CardContentInfo({ video, hashtags, desc }) {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// eslint-disable-next-line import/no-unresolved
 import s from './Nav.module.scss';
 
 const Nav = function Nav() {
