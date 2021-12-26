@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
@@ -5,8 +6,8 @@ import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import { PropTypes } from 'prop-types';
 import 'animate.css';
-import CardContentInfo from '../CardContentInfo/CardContentInfo';
-import CardAction from '../CardAction/CardAction';
+import CardContentInfo from 'components/CardContentInfo';
+import CardAction from 'components/CardAction';
 
 const PostCard = function PostCard({
   info: { uniqueId, auth, authStats, video, hashtags, desc, comments, views },

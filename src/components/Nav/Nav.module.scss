@@ -1,5 +1,9 @@
+$breakpoint-max-mobile: 767.98px;
+$breakpoint-min-tablet: 768px;
+$breakpoint-min-desktop: 1200px;
+
 .Nav {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-min-tablet) {
     position: fixed;
     min-width: 20%;
     height: 100vh;
@@ -11,7 +15,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: $breakpoint-max-mobile) {
     display: flex;
     justify-content: space-around;
   }
@@ -22,22 +26,22 @@
   padding: 10px 0;
   font-size: 20px;
   text-decoration: none;
-  color: #000;
-  transition: color 250ms ease;
-}
+  color: var(--dark-color);
+  transition: color var(--delay) ease;
 
-.NavLink:hover {
-  color: #f33958;
+  &:hover {
+    color: var(--main-accent-color);
+  }
 }
 
 .activeLink {
-  color: #f33958;
-}
+  color: var(--main-accent-color);
 
-.activeLink::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #f33958;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-accent-color);
+  }
 }

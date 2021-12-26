@@ -1,13 +1,17 @@
+$breakpoint-max-mobile: 767.98px;
+$breakpoint-min-tablet: 768px;
+$breakpoint-min-desktop: 1200px;
+
 .ListItem {
   max-width: 300px;
   border-radius: 3px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: var(--shadow) 0px 5px 15px;
 
   &:not(:last-child) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-min-tablet) {
     max-width: 400px;
 
     &:not(:last-child) {
@@ -15,7 +19,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-min-desktop) {
     max-width: 500px;
 
     &:not(:last-child) {

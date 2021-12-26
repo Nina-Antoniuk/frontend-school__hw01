@@ -1,9 +1,13 @@
+$breakpoint-max-mobile: 767.98px;
+$breakpoint-min-tablet: 768px;
+$breakpoint-min-desktop: 1200px;
+
 .postsList {
   max-width: 80%;
   padding-left: 0;
   list-style-type: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-min-tablet) {
     max-width: 70%;
     margin-left: 20%;
   }

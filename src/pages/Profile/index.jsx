@@ -1,17 +1,18 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import s from './Profile.module.scss';
-import LoaderComponent from '../../components/LoaderComponent/LoaderComponent';
-import statuses from '../../consts';
-import UserProfile from '../../components/UserProfile/UserProfile';
-import Post from '../../components/Post/Post';
-import fetchUserById from '../../services/fetchUserInfo';
-import { feed } from '../../services/feed';
+import { STATUSES } from 'consts';
+import LoaderComponent from 'components/LoaderComponent';
+import UserProfile from 'components/UserProfile';
+import Post from 'components/Post';
+import fetchUserById from 'services/fetchUserInfo';
+import { feed } from 'services/feed';
+import styles from './Profile.module.scss';
 
-const { PENDING, RESOLVE, REJECT, INIT } = statuses;
+const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
 
-const Propfile = function Propfile({ firstVideo }) {
+const Profile = function Profile({ firstVideo }) {
   const [userInfo, setUserInfo] = React.useState([]);
   const [userFeed, setUserFeed] = React.useState([]);
   const [status, setStatus] = React.useState(INIT);
@@ -51,16 +52,16 @@ const Propfile = function Propfile({ firstVideo }) {
 
   if (status === RESOLVE) {
     return (
-      <section className={s.section}>
+      <section className={styles.section}>
         <UserProfile profileInfo={userInfo} />
-        <ul className={s.postsList}>
+        <ul className={styles.postsList}>
           {userFeed.map((post) => (
             <Post
               key={post.id}
+              video={firstVideo.videoUrl}
               uniqueId={post.author.uniqueId}
               auth={post.author}
               authStats={post.authorStats}
-              video={firstVideo.videoUrl}
               hashtags={post.textExtra}
               desc={post.desc}
               views={post.stats.playCount}
@@ -73,10 +74,10 @@ const Propfile = function Propfile({ firstVideo }) {
   }
 };
 
-Propfile.propTypes = {
+Profile.propTypes = {
   firstVideo: PropTypes.shape({
     videoUrl: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default Propfile;
+export default Profile;

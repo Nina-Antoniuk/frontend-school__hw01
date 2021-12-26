@@ -1,3 +1,7 @@
+$breakpoint-max-mobile: 767.98px;
+$breakpoint-min-tablet: 768px;
+$breakpoint-min-desktop: 1200px;
+
 .section {
   padding-top: 30px;
 }
@@ -9,14 +13,12 @@
   padding-left: 0;
   list-style-type: none;
 
-  @media screen and (max-width: 767.98px) {
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-min-tablet) {
     max-width: 500px;
     margin-left: 30%;
   }
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: $breakpoint-min-desktop) {
     max-width: 800px;
   }
 }

@@ -1,3 +1,7 @@
+$breakpoint-max-mobile: 767.98px;
+$breakpoint-min-tablet: 768px;
+$breakpoint-min-desktop: 1200px;
+
 .video {
   display: block;
   margin-left: auto;
@@ -5,7 +9,7 @@
   margin-bottom: 20px;
   max-width: 100%;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $breakpoint-min-tablet) {
     max-width: 600px;
     max-height: 500px;
   }
@@ -14,7 +18,8 @@
 .hashtags {
   display: inline-block;
 }
-.pleceholder {
+
+.placeholder {
   display: block;
   margin-left: auto;
   margin-right: auto;

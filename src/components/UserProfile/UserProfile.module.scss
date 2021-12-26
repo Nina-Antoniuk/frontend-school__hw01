@@ -1,16 +1,20 @@
+$breakpoint-max-mobile: 767.98px;
+$breakpoint-min-tablet: 768px;
+$breakpoint-min-desktop: 1200px;
+
 .userProfile {
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: #fff;
+  box-shadow: var(--shadow) 0px 5px 15px;
+  background-color: var(--light-color);
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: $breakpoint-max-mobile) {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-min-tablet) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -20,7 +24,7 @@
     padding: 80px 50px 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-min-desktop) {
     max-width: 800px;
   }
 }
@@ -30,26 +34,27 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  background-color: rgb(212, 212, 211);
+  background-color: var(--placeholder-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $breakpoint-min-tablet) {
     max-width: 300px;
   }
 }
+
 .userAvatar {
   display: block;
   width: 100%;
 }
 
 .userInfo {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $breakpoint-min-desktop) {
     flex-basis: 50%;
   }
 }
 
 .description {
-  @media screen and (min-width: 768px) {
-    fles-basis: 100%;
+  @media screen and (min-width: $breakpoint-min-tablet) {
+    flex-basis: 100%;
     margin-top: 30px;
   }
 }

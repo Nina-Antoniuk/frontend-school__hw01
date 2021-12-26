@@ -4,25 +4,25 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 import { PropTypes } from 'prop-types';
-import s from './CardAction.module.scss';
+import styles from './CardAction.module.scss';
 
 const CardAction = function CardAction({ auth, authStats, views, comments }) {
   return (
-    <div className={s.info}>
-      <div className={s.infoBox}>
+    <div className={styles.info}>
+      <div className={styles.infoBox}>
         <IconButton aria-label="likes">
           <FavoriteBorderIcon sx={{ color: '#f33958' }} />
         </IconButton>
         {(auth && auth.heart) || authStats.heartCount}
       </div>
-      <div className={s.infoBox}>
+      <div className={styles.infoBox}>
         <IconButton aria-label="views">
           <RemoveRedEyeOutlinedIcon sx={{ color: '#f33958' }} />
         </IconButton>
         {views}
       </div>
 
-      <div className={s.infoBox}>
+      <div className={styles.infoBox}>
         <IconButton aria-label="comments">
           <MessageOutlinedIcon sx={{ color: '#f33958' }} />
         </IconButton>

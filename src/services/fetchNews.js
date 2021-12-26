@@ -1,18 +1,5 @@
-import consts from './consts';
+import callAPI from './callAPIs';
 
-const { BASE_URL, HOST, API_KEY } = consts;
-
-export default function fetchNews() {
-  return fetch(`${BASE_URL}/trending/feed`, {
-    method: 'GET',
-    headers: {
-      'x-rapidapi-host': HOST,
-      'x-rapidapi-key': API_KEY,
-    },
-  })
-    .then((response) => {
-      if (!response.ok) throw new Error(response.status);
-      return response.json();
-    })
-    .catch(console.error);
+export default function fetchUserInfo(id) {
+  callAPI('trending/feed', id);
 }

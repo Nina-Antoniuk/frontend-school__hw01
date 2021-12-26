@@ -1,13 +1,14 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import { v4 as uuid } from 'uuid';
 import { PropTypes } from 'prop-types';
-import s from './NewsFeed.module.scss';
-import Post from '../../components/Post/Post';
-import LoaderComponent from '../../components/LoaderComponent/LoaderComponent';
-import statuses from '../../consts';
-import fetchTrends from '../../services/fetchNews';
+import Post from 'components/Post';
+import LoaderComponent from 'components/LoaderComponent';
+import { STATUSES } from 'consts';
+import fetchTrends from 'services/fetchNews';
+import styles from './NewsFeed.module.scss';
 
-const { PENDING, RESOLVE, REJECT, INIT } = statuses;
+const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
 
 const NewsFeed = function NewsFeed({ getVideo }) {
   const [trends, setTrends] = React.useState([]);
@@ -53,7 +54,7 @@ const NewsFeed = function NewsFeed({ getVideo }) {
     return (
       <section className="section">
         {trends ? (
-          <ul className={s.postsList}>
+          <ul className={styles.postsList}>
             {trends.map((trend) => (
               <Post
                 key={uuid()}
