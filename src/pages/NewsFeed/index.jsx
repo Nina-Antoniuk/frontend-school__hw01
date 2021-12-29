@@ -58,11 +58,11 @@ const NewsFeed = function NewsFeed({ getVideo }) {
             {trends.map((trend) => (
               <Post
                 key={uuid()}
-                uniqueId={trend.authorMeta.name}
-                auth={trend.authorMeta}
                 video={trend.videoUrl}
+                uniqueId={trend.authorMeta.name}
+                author={trend.authorMeta}
                 hashtags={trend.hashtags}
-                desc={trend.text}
+                description={trend.text}
                 views={trend.playCount}
                 comments={trend.commentCount}
               />

@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
@@ -10,7 +9,16 @@ import CardContentInfo from 'components/CardContentInfo';
 import CardAction from 'components/CardAction';
 
 const PostCard = function PostCard({
-  info: { uniqueId, auth, authStats, video, hashtags, desc, comments, views },
+  info: {
+    uniqueId,
+    author,
+    authStats,
+    video,
+    hashtags,
+    description,
+    comments,
+    views,
+  },
 }) {
   return (
     <Card className="animate__animated animate__pulse" sx={{ width: '100%' }}>
@@ -18,17 +26,17 @@ const PostCard = function PostCard({
         <CardHeader
           avatar={
             <Avatar
-              alt={(auth && auth.nickName) || auth.nickname}
-              src={(auth && auth.avatar) || auth.avatarMedium}
+              alt={(author && author.nickName) || (author && author.nickname)}
+              src={(author && author.avatar) || (author && author.avatarMedium)}
               sx={{ width: 56, height: 56 }}
             />
           }
-          title={(auth && auth.nickName) || auth.nickname}
+          title={(author && author.nickName) || (author && author.nickname)}
         />
       </Link>
-      <CardContentInfo video={video} hashtags={hashtags} desc={desc} />
+      <CardContentInfo video={video} hashtags={hashtags} desc={description} />
       <CardAction
-        auth={auth}
+        author={author}
         authStats={authStats}
         views={views}
         comments={comments}
@@ -40,11 +48,11 @@ const PostCard = function PostCard({
 PostCard.defaultProps = {
   info: {
     uniqueId: '',
-    auth: {},
+    author: {},
     authStats: {},
     video: '',
     hashtags: [],
-    desc: '',
+    description: '',
     comments: 0,
     views: 0,
   },
@@ -53,7 +61,7 @@ PostCard.defaultProps = {
 PostCard.propTypes = {
   info: PropTypes.shape({
     uniqueId: PropTypes.string,
-    auth: PropTypes.shape({
+    author: PropTypes.shape({
       heart: PropTypes.number,
       nickName: PropTypes.string,
       nickname: PropTypes.string,
@@ -65,7 +73,7 @@ PostCard.propTypes = {
     }),
     video: PropTypes.string,
     hashtags: PropTypes.array,
-    desc: PropTypes.string,
+    description: PropTypes.string,
     comments: PropTypes.number,
     views: PropTypes.number,
   }),
