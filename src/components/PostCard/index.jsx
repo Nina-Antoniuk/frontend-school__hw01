@@ -5,8 +5,8 @@ import CardHeader from '@mui/material/CardHeader';
 import Avatar from '@mui/material/Avatar';
 import { PropTypes } from 'prop-types';
 import 'animate.css';
-import CardContentInfo from 'components/CardContentInfo';
-import CardAction from 'components/CardAction';
+import CardContentInfo from '../CardContentInfo';
+import CardAction from '../CardAction';
 
 const PostCard = function PostCard({
   info: {

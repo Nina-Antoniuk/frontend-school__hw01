@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import LoaderComponent from 'components/LoaderComponent';
-import UserProfile from 'components/UserProfile';
-import Post from 'components/Post';
-import fetchUserById from 'services/fetchUserInfo';
 import { feed } from 'services/feed';
-import { STATUSES } from 'consts';
+import { STATUSES } from 'constants/js/consts';
+import { fetchUserInfo } from 'services/fetchUserInfo';
+import Post from 'components/Post';
+import UserProfile from 'components/UserProfile';
+import LoaderComponent from 'components/LoaderComponent';
 import styles from './Profile.module.scss';
 
 const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
@@ -21,7 +21,8 @@ const Profile = function Profile({ firstVideo }) {
   React.useEffect(() => {
     setStatus(PENDING);
     setUserFeed(feed.itemList);
-    fetchUserById(id)
+    fetchUserInfo(id)
+      .then((response) => response.json())
       .then((data) => {
         setUserInfo(data);
         return setStatus(RESOLVE);

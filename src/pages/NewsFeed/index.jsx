@@ -1,11 +1,10 @@
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 import { v4 as uuid } from 'uuid';
 import { PropTypes } from 'prop-types';
 import Post from 'components/Post';
 import LoaderComponent from 'components/LoaderComponent';
-import { STATUSES } from 'consts';
-import fetchTrends from 'services/fetchNews';
+import { STATUSES } from 'constants/js/consts';
+import { fetchTrends } from 'services/fetchTrends';
 import styles from './NewsFeed.module.scss';
 
 const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
@@ -18,12 +17,13 @@ const NewsFeed = function NewsFeed({ getVideo }) {
   React.useEffect(() => {
     setStatus(PENDING);
     fetchTrends()
+      .then((response) => response.json())
       .then((data) => {
         setTrends(data);
         return setStatus(RESOLVE);
       })
-      .catch((error_) => {
-        setError(error_);
+      .catch((err) => {
+        setError(err);
         return setStatus(REJECT);
       });
   }, []);

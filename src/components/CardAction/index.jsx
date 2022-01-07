@@ -13,7 +13,7 @@ const CardAction = function CardAction({ author, authStats, views, comments }) {
         <IconButton aria-label="likes">
           <FavoriteBorderIcon sx={{ color: '#f33958' }} />
         </IconButton>
-        {(author && author.heart) || authStats.heartCount}
+        {author.heart || authStats.heartCount}
       </div>
       <div className={styles.infoBox}>
         <IconButton aria-label="views">

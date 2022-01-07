@@ -1,6 +1,4 @@
-$breakpoint-max-mobile: 767.98px;
-$breakpoint-min-tablet: 768px;
-$breakpoint-min-desktop: 1200px;
+@import '../../constants/scss/variables.scss';
 
 .postsList {
   max-width: 80%;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
-import { ROUTES } from 'consts';
-import LoaderComponent from 'components/LoaderComponent';
-import NewsFeed from 'pages/NewsFeed';
-import Profile from 'pages/Profile';
+import NewsFeed from '../../pages/NewsFeed';
+import Profile from '../../pages/Profile';
+import LoaderComponent from '../LoaderComponent';
+import { ROUTES } from '../../constants/js/consts';
 
 const Routs = function Routs({ getFirstVideo, firstVideo }) {
   return (

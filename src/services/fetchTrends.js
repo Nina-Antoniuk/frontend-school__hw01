@@ -1,5 +1,5 @@
 import callAPI from './callAPIs';
 
-export default function fetchUserInfo(id) {
+export function fetchTrends(id) {
   callAPI('trending/feed', id);
 }

@@ -1,5 +1,5 @@
 import callAPI from './callAPIs';
 
-export default function fetchUserInfo(id) {
-  callAPI('user/info', id);
+export function fetchUserInfo(id) {
+  return callAPI('user/info', id);
 }
