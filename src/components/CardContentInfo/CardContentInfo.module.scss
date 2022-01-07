@@ -1,0 +1,24 @@
+@import '../../constants/scss/variables.scss';
+
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
+
+  @media screen and(min-width: $breakpoint-min-tablet) {
+    max-width: 600px;
+    max-height: 500px;
+  }
+}
+
+.hashtags {
+  display: inline-block;
+}
+
+.placeholder {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

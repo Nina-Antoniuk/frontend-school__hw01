@@ -1,0 +1,45 @@
+@import '../../constants/scss/variables.scss';
+
+.Nav {
+  @media screen and (min-width: $breakpoint-min-tablet) {
+    position: fixed;
+    min-width: 20%;
+    height: 100vh;
+    padding: 3vh 2vw;
+  }
+}
+
+.NavList {
+  padding: 0;
+  list-style-type: none;
+
+  @media screen and (max-width: $breakpoint-max-mobile) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.NavLink {
+  display: block;
+  padding: 10px 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: color var(--delay) ease;
+
+  &:hover {
+    color: var(--main-accent-color);
+  }
+}
+
+.activeLink {
+  color: var(--main-accent-color);
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-accent-color);
+  }
+}
