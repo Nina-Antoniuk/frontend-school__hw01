@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TukTukApp 1`] = `
+<div>
+  <div
+    class="userProfile"
+  >
+    <div
+      class="thumb"
+    >
+      <img
+        alt="Test nickname"
+        class="userAvatar"
+        height="300"
+        src="test src"
+        width="300"
+      />
+    </div>
+    <div
+      class="userInfo"
+    >
+      <p>
+        <span
+          class="field"
+        >
+          User name
+        </span>
+        :
+        Test nickname
+      </p>
+      <p>
+        <span
+          class="field"
+        >
+          Signature
+        </span>
+        :
+        test signature
+      </p>
+    </div>
+  </div>
+</div>
+`;

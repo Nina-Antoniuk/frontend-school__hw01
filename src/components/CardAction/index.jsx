@@ -6,14 +6,14 @@ import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 import { PropTypes } from 'prop-types';
 import styles from './CardAction.module.scss';
 
-const CardAction = function CardAction({ author, authStats, views, comments }) {
+const CardAction = function CardAction({ heart, views, comments }) {
   return (
     <div className={styles.info}>
       <div className={styles.infoBox}>
         <IconButton aria-label="likes">
           <FavoriteBorderIcon sx={{ color: '#f33958' }} />
         </IconButton>
-        {author.heart || authStats.heartCount}
+        {heart}
       </div>
       <div className={styles.infoBox}>
         <IconButton aria-label="views">

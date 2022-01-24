@@ -1,21 +1,20 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { PropTypes } from 'prop-types';
-import NewsFeed from 'pages/NewsFeed';
-import Profile from 'pages/Profile';
-import LoaderComponent from 'components/LoaderComponent';
-import { ROUTES } from 'constants/js/consts';
+import NewsFeed from '../../pages/NewsFeed';
+import Profile from '../../pages/Profile';
+import LoaderComponent from '../LoaderComponent';
+import { ROUTES } from '../../shared/js/consts';
 
-const Routs = function Routs({ getFirstVideo, firstVideo }) {
+const Routs = function Routs() {
   return (
     <div className="content">
       <React.Suspense fallback={<LoaderComponent />}>
         <Switch>
           <Route exact path={ROUTES.HOME}>
-            <NewsFeed getVideo={getFirstVideo} />
+            <NewsFeed />
           </Route>
           <Route path={`${ROUTES.USER_PROFILE}/:id`}>
-            <Profile firstVideo={firstVideo} />
+            <Profile />
           </Route>
           <Route>
             <Redirect exact to={ROUTES.HOME} />
@@ -26,8 +25,4 @@ const Routs = function Routs({ getFirstVideo, firstVideo }) {
   );
 };
 
-Routs.propTypes = {
-  getFirstVideo: PropTypes.func.isRequired,
-  firstVideo: PropTypes.object.isRequired,
-};
 export default Routs;

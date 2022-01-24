@@ -1,37 +1,22 @@
 import React from 'react';
 import { v4 as uuid } from 'uuid';
-import { PropTypes } from 'prop-types';
-import Post from 'components/Post';
-import LoaderComponent from 'components/LoaderComponent';
-import { STATUSES } from 'constants/js/consts';
-import { fetchTrends } from 'services/fetchTrends';
+import LoaderComponent from '../../components/LoaderComponent';
+import { STATUSES } from '../../shared/js/consts';
+import { processingNewsFeed } from '../../services/processingNewsFeed';
+import Post from '../../components/Post';
 import styles from './NewsFeed.module.scss';
 
 const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
 
-const NewsFeed = function NewsFeed({ getVideo }) {
+const NewsFeed = function NewsFeed() {
   const [trends, setTrends] = React.useState([]);
   const [status, setStatus] = React.useState(INIT);
   const [error, setError] = React.useState('');
 
   React.useEffect(() => {
     setStatus(PENDING);
-    fetchTrends()
-      .then((response) => response.json())
-      .then((data) => {
-        setTrends(data);
-        return setStatus(RESOLVE);
-      })
-      .catch((err) => {
-        setError(err);
-        return setStatus(REJECT);
-      });
+    processingNewsFeed(setTrends, setStatus, setError);
   }, []);
-
-  React.useEffect(() => {
-    if (!trends) return;
-    getVideo(trends[0]);
-  }, [getVideo, trends]);
 
   if (status === INIT) {
     return <div />;
@@ -58,13 +43,11 @@ const NewsFeed = function NewsFeed({ getVideo }) {
             {trends.map((trend) => (
               <Post
                 key={uuid()}
-                video={trend.videoUrl}
-                uniqueId={trend.authorMeta.name}
-                author={trend.authorMeta}
-                hashtags={trend.hashtags}
-                description={trend.text}
-                views={trend.playCount}
-                comments={trend.commentCount}
+                video={trend.video.playAddr}
+                author={trend.author}
+                description={trend.desc}
+                stats={trend.stats}
+                heart={trend.authorStats.heart}
               />
             ))}
           </ul>
@@ -74,10 +57,6 @@ const NewsFeed = function NewsFeed({ getVideo }) {
       </section>
     );
   }
-};
-
-NewsFeed.propTypes = {
-  getVideo: PropTypes.func.isRequired,
 };
 
 export default NewsFeed;

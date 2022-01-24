@@ -9,37 +9,27 @@ import CardContentInfo from '../CardContentInfo';
 import CardAction from '../CardAction';
 
 const PostCard = function PostCard({
-  info: {
-    uniqueId,
-    author,
-    authStats,
-    video,
-    hashtags,
-    description,
-    comments,
-    views,
-  },
+  info: { author, stats, video, description, heart },
 }) {
   return (
     <Card className="animate__animated animate__pulse" sx={{ width: '100%' }}>
-      <Link to={`/profile/${uniqueId}`}>
+      <Link className="postCard__link" to={`/profile/${author.uniqueId}`}>
         <CardHeader
           avatar={
             <Avatar
-              alt={(author && author.nickName) || (author && author.nickname)}
-              src={(author && author.avatar) || (author && author.avatarMedium)}
+              alt={author.nickname}
+              src={author.avatarMedium}
               sx={{ width: 56, height: 56 }}
             />
           }
-          title={(author && author.nickName) || (author && author.nickname)}
+          title={author.nickname}
         />
       </Link>
-      <CardContentInfo video={video} hashtags={hashtags} desc={description} />
+      <CardContentInfo video={video} desc={description} />
       <CardAction
-        author={author}
-        authStats={authStats}
-        views={views}
-        comments={comments}
+        heart={heart}
+        views={stats.playCount}
+        comments={stats.commentCount}
       />
     </Card>
   );
@@ -47,35 +37,29 @@ const PostCard = function PostCard({
 
 PostCard.defaultProps = {
   info: {
-    uniqueId: '',
     author: {},
-    authStats: {},
+    stats: {},
     video: '',
-    hashtags: [],
     description: '',
-    comments: 0,
-    views: 0,
+    heart: 0,
   },
 };
 
 PostCard.propTypes = {
   info: PropTypes.shape({
-    uniqueId: PropTypes.string,
     author: PropTypes.shape({
-      heart: PropTypes.number,
-      nickName: PropTypes.string,
+      uniqueId: PropTypes.string,
       nickname: PropTypes.string,
-      avatar: PropTypes.string,
       avatarMedium: PropTypes.string,
-    }),
-    authStats: PropTypes.shape({
-      heartCount: PropTypes.number,
+      signature: PropTypes.string,
     }),
     video: PropTypes.string,
-    hashtags: PropTypes.array,
+    heart: PropTypes.number,
     description: PropTypes.string,
-    comments: PropTypes.number,
-    views: PropTypes.number,
+    stats: PropTypes.shape({
+      commentCount: PropTypes.number,
+      playCount: PropTypes.number,
+    }),
   }),
 };
 

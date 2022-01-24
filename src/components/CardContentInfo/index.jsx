@@ -1,11 +1,10 @@
 import React from 'react';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { v4 as uuid } from 'uuid';
 import { PropTypes } from 'prop-types';
 import styles from './CardContentInfo.module.scss';
 
-const CardContentInfo = function CardContentInfo({ video, hashtags, desc }) {
+const CardContentInfo = function CardContentInfo({ video, desc }) {
   return (
     <CardContent>
       {video ? (
@@ -26,20 +25,6 @@ const CardContentInfo = function CardContentInfo({ video, hashtags, desc }) {
         />
       )}
 
-      <Typography
-        variant="overline"
-        sx={{ lineHeight: 1.2, marginBottom: '5px' }}
-      >
-        {hashtags.map((hashtag) => (
-          <p
-            className={styles.hashtags}
-            key={hashtag.id !== undefined ? hashtag.id : uuid()}
-          >
-            #{(hashtag && hashtag.name) || hashtag.hashtagName}
-          </p>
-        ))}
-      </Typography>
-
       <Typography variant="body2" color="text.secondary">
         {desc}
       </Typography>
@@ -49,13 +34,11 @@ const CardContentInfo = function CardContentInfo({ video, hashtags, desc }) {
 
 CardContentInfo.defaultProps = {
   video: '',
-  hashtags: [],
   desc: '',
 };
 
 CardContentInfo.propTypes = {
   video: PropTypes.string,
-  hashtags: PropTypes.array,
   desc: PropTypes.string,
 };
 

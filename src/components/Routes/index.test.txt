@@ -1,0 +1,36 @@
+import React from 'react';
+import { render, unmountComponentAtNode } from 'react-dom';
+import { act } from 'react-dom/test-utils';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
+import { screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import Routes from './index';
+
+let container = null;
+
+beforeEach(() => {
+  container = document.createElement('div');
+  document.body.appendChild(container);
+});
+
+afterEach(() => {
+  unmountComponentAtNode(container);
+  container.remove();
+  container = null;
+});
+
+test('bad route', () => {
+  const history = createMemoryHistory();
+  history.push('/bad/route');
+
+  render(
+    <Router history={history}>
+      <Routes />
+    </Router>,
+    container,
+  );
+
+  // expect(screen.queryByText('News')).toBeInTheDocument();
+  // expect(screen.findByText(/profile/i)).toBeInTheDocument();
+});

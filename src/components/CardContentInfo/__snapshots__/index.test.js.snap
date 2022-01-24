@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`condition-dependent component render check render CardContentInfo with fake link 1`] = `
+<div>
+  <div
+    class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+  >
+    <video
+      autoplay=""
+      class="video"
+      controls=""
+      loop=""
+      preload="auto"
+      src="https://www.youtube.com/watch?v=Ex2j4oIweDk"
+    />
+    <p
+      class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+    >
+      about unit tests
+    </p>
+  </div>
+</div>
+`;
+
+exports[`condition-dependent component render check render CardContentInfo without fake link 1`] = `
+<div>
+  <div
+    class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+  >
+    <img
+      alt="placeholder"
+      class="placeholder"
+      src="https://via.placeholder.com/250x300.png?text=video+is+not+available"
+    />
+    <p
+      class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+    >
+      about unit tests
+    </p>
+  </div>
+</div>
+`;
