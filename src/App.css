@@ -1,0 +1,66 @@
+:root {
+  --main-bg-color: #e6dfdf;
+  --main-accent-color: #f33958;
+  --light-color: #fff;
+  --dark-color: #000;
+  --dark-accent-color: rgba(26, 39, 94, 0.39);
+  --shadow: rgba(0, 0, 0, 0.35);
+  --placeholder-color: #d4d4d3;
+  --delay: 250ms;
+}
+
+.backGround {
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 50px;
+  }
+}
+
+.Loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: var(--dark-accent-color);
+}
+/*# sourceMappingURL=App.css.map */

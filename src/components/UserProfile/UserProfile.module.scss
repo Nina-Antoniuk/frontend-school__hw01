@@ -1,0 +1,62 @@
+@import '../../shared/scss/variables.scss';
+
+.userProfile {
+  padding: 20px;
+  box-shadow: var(--shadow) 0px 5px 15px;
+  background-color: var(--light-color);
+
+  @media screen and (max-width: $breakpoint-max-mobile) {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $breakpoint-min-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 500px;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    padding: 80px 50px 30px;
+  }
+
+  @media screen and (min-width: $breakpoint-min-desktop) {
+    max-width: 800px;
+  }
+}
+
+.thumb {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: var(--placeholder-color);
+
+  @media screen and (min-width: $breakpoint-min-tablet) {
+    max-width: 300px;
+  }
+}
+
+.userAvatar {
+  display: block;
+  width: 100%;
+}
+
+.userInfo {
+  @media screen and (min-width: $breakpoint-min-desktop) {
+    flex-basis: 50%;
+  }
+}
+
+.description {
+  @media screen and (min-width: $breakpoint-min-tablet) {
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+}
+
+.field {
+  text-decoration: underline;
+}

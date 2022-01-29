@@ -1,0 +1,55 @@
+:root {
+  --main-bg-color: #e6dfdf;
+  --main-accent-color: #f33958;
+  --light-color: #fff;
+  --dark-color: #000;
+  --dark-accent-color: rgba(26, 39, 94, 0.39);
+  --shadow: rgba(0, 0, 0, 0.35);
+  --placeholder-color: #d4d4d3;
+  --delay: 250ms;
+}
+
+$breakpoint-max-mobile: 767.98px;
+$breakpoint-min-tablet: 768px;
+$breakpoint-min-desktop: 1200px;
+
+.backGround {
+  min-height: 100vh;
+  background-color: var(--main-bg-color);
+}
+
+.App {
+  @media screen and(min-width: $breakpoint-min-tablet) {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.content {
+  @media screen and (min-width: $breakpoint-min-tablet) {
+    flex-grow: 1;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+
+  @media screen and (min-width: $breakpoint-min-tablet) {
+    padding-top: 50px;
+  }
+}
+
+.Loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-accent-color);
+}
