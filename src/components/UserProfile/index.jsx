@@ -9,6 +9,7 @@ const UserProfile = function UserProfile({
     <div className={styles.userProfile}>
       <div className={styles.thumb}>
         <img
+          data-testid="userAvatar"
           className={styles.userAvatar}
           src={avatarMedium || 'https://via.placeholder.com/300x300'}
           alt={nickname || 'placeholder for stranger'}
@@ -19,7 +20,7 @@ const UserProfile = function UserProfile({
       <div className={styles.userInfo}>
         <p>
           <span className={styles.field}>User name</span>:
-          {nickname || 'stranger'}
+          <span>{nickname || 'stranger'}</span>
         </p>
         <p>
           <span className={styles.field}>Signature</span>:{signature || ''}

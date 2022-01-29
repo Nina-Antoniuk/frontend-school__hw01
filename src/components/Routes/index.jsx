@@ -5,7 +5,7 @@ import Profile from '../../pages/Profile';
 import LoaderComponent from '../LoaderComponent';
 import { ROUTES } from '../../shared/js/consts';
 
-const Routs = function Routs() {
+const Routes = function Routes() {
   return (
     <div className="content">
       <React.Suspense fallback={<LoaderComponent />}>
@@ -25,4 +25,4 @@ const Routs = function Routs() {
   );
 };
 
-export default Routs;
+export default Routes;

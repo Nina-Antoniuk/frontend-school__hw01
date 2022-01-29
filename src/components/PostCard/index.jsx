@@ -13,16 +13,21 @@ const PostCard = function PostCard({
 }) {
   return (
     <Card className="animate__animated animate__pulse" sx={{ width: '100%' }}>
-      <Link className="postCard__link" to={`/profile/${author.uniqueId}`}>
+      <Link
+        className="postCard__link"
+        to={`/profile/${author.uniqueId}`}
+        data-testid="profileLink"
+      >
         <CardHeader
           avatar={
             <Avatar
-              alt={author.nickname}
-              src={author.avatarMedium}
+              data-testid="avatar"
+              alt={author.nickname || 'placeholder for stranger'}
+              src={author.avatarMedium || 'https://via.placeholder.com/56x56'}
               sx={{ width: 56, height: 56 }}
             />
           }
-          title={author.nickname}
+          title={author.nickname || 'stranger'}
         />
       </Link>
       <CardContentInfo video={video} desc={description} />

@@ -34,7 +34,7 @@ const CardContentInfo = function CardContentInfo({ video, desc }) {
 
 CardContentInfo.defaultProps = {
   video: '',
-  desc: '',
+  desc: 'here should be a description',
 };
 
 CardContentInfo.propTypes = {

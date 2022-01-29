@@ -2,9 +2,9 @@ import React from 'react';
 import { v4 as uuid } from 'uuid';
 import LoaderComponent from '../../components/LoaderComponent';
 import { STATUSES } from '../../shared/js/consts';
-import { processingNewsFeed } from '../../services/processingNewsFeed';
-import Post from '../../components/Post';
 import styles from './NewsFeed.module.scss';
+import Post from '../../components/Post';
+import { fetchTrends } from 'api/fetchTrends';
 
 const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
 
@@ -15,7 +15,15 @@ const NewsFeed = function NewsFeed() {
 
   React.useEffect(() => {
     setStatus(PENDING);
-    processingNewsFeed(setTrends, setStatus, setError);
+    fetchTrends()
+      .then((data) => {
+        setTrends(data);
+        return setStatus(RESOLVE);
+      })
+      .catch((err) => {
+        setError(err);
+        return setStatus(REJECT);
+      });
   }, []);
 
   if (status === INIT) {

@@ -1,67 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Nav component rendering 1`] = `
+exports[`Check NewsPages rendering 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav
-        class="Nav"
+      <div
+        class="Loader"
       >
-        <ul
-          class="NavList"
+        <div
+          class="sl-bubble2"
         >
-          <li>
-            <a
-              aria-current="page"
-              class="NavLink activeLink"
-              data-testid="newsPage"
-              href="/"
+          <div
+            class="sl-loader"
+            style="--size: 1.50;"
+          >
+            <div
+              class="sl-loader-items"
             >
-              News
-            </a>
-          </li>
-          <li>
-            <a
-              class="NavLink"
-              data-testid="profile"
-              href="/profile/dave.xp"
-            >
-              Profile
-            </a>
-          </li>
-        </ul>
-      </nav>
+              <div
+                class="sl-bubble"
+                style="--i: 1; --bg: #FFFFFF;"
+              />
+              <div
+                class="sl-bubble"
+                style="--i: 2; --bg: #FFFFFF;"
+              />
+              <div
+                class="sl-bubble"
+                style="--i: 3; --bg: #FFFFFF;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <nav
-      class="Nav"
+    <div
+      class="Loader"
     >
-      <ul
-        class="NavList"
+      <div
+        class="sl-bubble2"
       >
-        <li>
-          <a
-            aria-current="page"
-            class="NavLink activeLink"
-            data-testid="newsPage"
-            href="/"
+        <div
+          class="sl-loader"
+          style="--size: 1.50;"
+        >
+          <div
+            class="sl-loader-items"
           >
-            News
-          </a>
-        </li>
-        <li>
-          <a
-            class="NavLink"
-            data-testid="profile"
-            href="/profile/dave.xp"
-          >
-            Profile
-          </a>
-        </li>
-      </ul>
-    </nav>
+            <div
+              class="sl-bubble"
+              style="--i: 1; --bg: #FFFFFF;"
+            />
+            <div
+              class="sl-bubble"
+              style="--i: 2; --bg: #FFFFFF;"
+            />
+            <div
+              class="sl-bubble"
+              style="--i: 3; --bg: #FFFFFF;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

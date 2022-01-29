@@ -1,57 +1,46 @@
 import React from 'react';
-import { render, unmountComponentAtNode } from 'react-dom';
-import { screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { act } from 'react-dom/test-utils';
+import { screen } from '@testing-library/react';
 import CardAction from './index';
 
-let container = null;
 const fakeProps = {
   heart: 500,
   views: 100,
   comments: 5,
 };
 
-beforeEach(() => {
-  container = document.createElement('div');
-  document.body.appendChild(container);
-});
-
-afterEach(() => {
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
-
-test('CardAction text content', () => {
-  act(() => {
-    render(<CardAction {...fakeProps} />, container);
+describe('Check CardAction text content rendering', () => {
+  test('with fake props', () => {
+    const container = render(<CardAction {...fakeProps} />);
+    expect(container).toMatchSnapshot();
   });
-  expect(container).toMatchSnapshot();
+
+  test('without fake props', () => {
+    const container = render(<CardAction />);
+    expect(container).toMatchSnapshot();
+  });
 });
 
-describe('widget check', () => {
-  test('check render views', () => {
-    act(() => {
-      render(<CardAction {...fakeProps} />, container);
-    });
+describe('Check widget content rendering', () => {
+  test('insert first fake props', () => {
+    render(<CardAction {...fakeProps} />);
 
     expect(screen.getByText('100')).toBeInTheDocument();
-  });
-
-  test('check render comments', () => {
-    act(() => {
-      render(<CardAction {...fakeProps} />, container);
-    });
-
     expect(screen.getByText('5')).toBeInTheDocument();
+    expect(screen.getByText('500')).toBeInTheDocument();
   });
 
-  test('check render hearts', () => {
-    act(() => {
-      render(<CardAction {...fakeProps} />, container);
-    });
+  test('insert second fake props', () => {
+    const anotherProps = {
+      heart: 10,
+      views: 20,
+      comments: 0,
+    };
+    render(<CardAction {...anotherProps} />);
 
-    expect(screen.getByText('500')).toBeInTheDocument();
+    expect(screen.getByText('10')).toBeInTheDocument();
+    expect(screen.getByText('20')).toBeInTheDocument();
+    expect(screen.getByText('0')).toBeInTheDocument();
   });
 });

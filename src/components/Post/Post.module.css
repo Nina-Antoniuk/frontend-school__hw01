@@ -1,0 +1,29 @@
+.ListItem {
+  max-width: 300px;
+  border-radius: 3px;
+  -webkit-box-shadow: var(--shadow) 0px 5px 15px;
+  box-shadow: var(--shadow) 0px 5px 15px;
+}
+
+.ListItem:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .ListItem {
+    max-width: 400px;
+  }
+  .ListItem:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ListItem {
+    max-width: 500px;
+  }
+  .ListItem:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=Post.module.css.map */

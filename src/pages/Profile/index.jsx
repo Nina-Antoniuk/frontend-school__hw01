@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import UserProfile from '../../components/UserProfile';
 import LoaderComponent from '../../components/LoaderComponent';
-import { processingUserInfo } from '../../services/processingUserInfo';
+import { fetchUserInfo } from 'api/fetchUserInfo';
 import { STATUSES } from '../../shared/js/consts';
 import styles from './Profile.module.scss';
 
@@ -16,7 +16,15 @@ const Profile = function Profile() {
 
   React.useEffect(() => {
     setStatus(PENDING);
-    processingUserInfo(id, setUserInfo, setStatus, setError);
+    fetchUserInfo(id)
+      .then((data) => {
+        setUserInfo(data);
+        return setStatus(RESOLVE);
+      })
+      .catch((err) => {
+        setError(err);
+        return setStatus(REJECT);
+      });
   }, [id]);
 
   if (status === INIT) {

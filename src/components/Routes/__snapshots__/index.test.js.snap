@@ -1,67 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Check Nav component rendering 1`] = `
+exports[`Check Routes component rendering 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav
-        class="Nav"
+      <div
+        class="content"
       >
-        <ul
-          class="NavList"
-        >
-          <li>
-            <a
-              aria-current="page"
-              class="NavLink activeLink"
-              data-testid="newsPage"
-              href="/"
-            >
-              News
-            </a>
-          </li>
-          <li>
-            <a
-              class="NavLink"
-              data-testid="profile"
-              href="/profile/dave.xp"
-            >
-              Profile
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <p>
+          Mocked component
+        </p>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <nav
-      class="Nav"
+    <div
+      class="content"
     >
-      <ul
-        class="NavList"
-      >
-        <li>
-          <a
-            aria-current="page"
-            class="NavLink activeLink"
-            data-testid="newsPage"
-            href="/"
-          >
-            News
-          </a>
-        </li>
-        <li>
-          <a
-            class="NavLink"
-            data-testid="profile"
-            href="/profile/dave.xp"
-          >
-            Profile
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <p>
+        Mocked component
+      </p>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -184,3 +184,10 @@ export const feedData = [
     vl1: false,
   },
 ];
+
+// import { feedData } from '../../shared/js/trending-feeds';
+// const promise = new Promise(function (resolve, reject) {
+//   resolve(feedData);
+//   reject('all operations are felt');
+// });
+// return promise;

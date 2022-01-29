@@ -13,6 +13,7 @@ const Nav = function Nav() {
             to={ROUTES.HOME}
             className={styles.NavLink}
             activeClassName={styles.activeLink}
+            data-testid="newsPage"
           >
             News
           </NavLink>
@@ -22,6 +23,7 @@ const Nav = function Nav() {
             to={`${ROUTES.USER_PROFILE}/${'dave.xp'}`}
             className={styles.NavLink}
             activeClassName={styles.activeLink}
+            data-testid="profile"
           >
             Profile
           </NavLink>

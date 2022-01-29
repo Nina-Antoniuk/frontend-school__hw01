@@ -33,19 +33,13 @@ const CardAction = function CardAction({ heart, views, comments }) {
 };
 
 CardAction.defaultProps = {
-  author: {},
-  authStats: {},
+  heart: 0,
   views: 0,
   comments: 0,
 };
 
 CardAction.propTypes = {
-  author: PropTypes.shape({
-    heart: PropTypes.number,
-  }),
-  authStats: PropTypes.shape({
-    heartCount: PropTypes.number,
-  }),
+  heart: PropTypes.number,
   views: PropTypes.number,
   comments: PropTypes.number,
 };

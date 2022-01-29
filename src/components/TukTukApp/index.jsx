@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../Nav';
-import Routs from '../Routes';
+import Routes from '../Routes';
 
 const TukTukApp = function TukTukApp() {
   return (
@@ -9,7 +9,7 @@ const TukTukApp = function TukTukApp() {
         <Nav />
       </header>
       <main>
-        <Routs />
+        <Routes />
       </main>
     </>
   );

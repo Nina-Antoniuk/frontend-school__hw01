@@ -1,47 +1,56 @@
 import React from 'react';
-import { render, unmountComponentAtNode } from 'react-dom';
-import { act } from 'react-dom/test-utils';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import UserProfile from './index';
 
-let container = null;
-
-beforeEach(() => {
-  container = document.createElement('div');
-  document.body.appendChild(container);
-});
-
-afterEach(() => {
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
-
 const fakeProps = {
   user: {
-    nickname: 'Test nickname',
-    avatarMedium: 'test src',
+    nickname: 'Test Nickname',
+    avatarMedium: 'http://localhost/test%20src',
     signature: 'test signature',
   },
 };
 
-test('TukTukApp', () => {
-  act(() => {
-    render(<UserProfile {...fakeProps} />, container);
+describe('Check UserProfile component rendering', () => {
+  test('with fake props', () => {
+    const container = render(<UserProfile {...fakeProps} />);
+    expect(container).toMatchSnapshot();
   });
-  expect(container).toMatchSnapshot();
+
+  test('without props', () => {
+    const { getByText, getByAltText, getByTestId } = render(<UserProfile />);
+    const img = getByTestId('userAvatar');
+    expect(getByText('stranger')).toBeInTheDocument();
+    expect(getByAltText('placeholder for stranger')).toBeInTheDocument();
+    expect(img.src).toEqual('https://via.placeholder.com/300x300');
+  });
 });
 
-// describe('component contain props', () => {
-//   act(() => {
-//     render(<UserProfile {...fakeProps} />, container);
-//   });
-//   test('nickname', () => {
-//     expect(container.textContent).toContain(fakeProps.user.nickname);
-//   });
-//   test('signature', () => {
-//     expect(container.querySelector('.userInfo').textContent).toContain(
-//       fakeProps.user.signature,
-//     );
-//   });
-// });
+describe('Check UserProfile text content rendering', () => {
+  test('insert first fakeProps object', () => {
+    const { getByText, getByAltText, getByTestId } = render(
+      <UserProfile {...fakeProps} />,
+    );
+    const img = getByTestId('userAvatar');
+    expect(getByText(fakeProps.user.nickname)).toBeInTheDocument();
+    expect(getByAltText(fakeProps.user.nickname)).toBeInTheDocument();
+    expect(img.src).toEqual(fakeProps.user.avatarMedium);
+  });
+
+  test('insert second fakeProps object', () => {
+    const anotherProps = {
+      user: {
+        nickname: 'Alina',
+        avatarMedium: 'http://localhost/alina.jpg',
+        signature: 'some signature from Alina',
+      },
+    };
+    const { getByText, getByAltText, getByTestId } = render(
+      <UserProfile {...anotherProps} />,
+    );
+    const img = getByTestId('userAvatar');
+    expect(getByText(anotherProps.user.nickname)).toBeInTheDocument();
+    expect(getByAltText(anotherProps.user.nickname)).toBeInTheDocument();
+    expect(img.src).toEqual(anotherProps.user.avatarMedium);
+  });
+});
