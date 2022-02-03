@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="info"
+        class="sc-bdvvtL swdr"
       >
         <div
-          class="infoBox"
+          class="sc-gsDKAQ kFFYJh"
         >
           <button
             aria-label="likes"
@@ -35,7 +35,7 @@ Object {
           500
         </div>
         <div
-          class="infoBox"
+          class="sc-gsDKAQ kFFYJh"
         >
           <button
             aria-label="views"
@@ -61,7 +61,7 @@ Object {
           100
         </div>
         <div
-          class="infoBox"
+          class="sc-gsDKAQ kFFYJh"
         >
           <button
             aria-label="comments"
@@ -91,10 +91,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="info"
+      class="sc-bdvvtL swdr"
     >
       <div
-        class="infoBox"
+        class="sc-gsDKAQ kFFYJh"
       >
         <button
           aria-label="likes"
@@ -120,7 +120,7 @@ Object {
         500
       </div>
       <div
-        class="infoBox"
+        class="sc-gsDKAQ kFFYJh"
       >
         <button
           aria-label="views"
@@ -146,7 +146,7 @@ Object {
         100
       </div>
       <div
-        class="infoBox"
+        class="sc-gsDKAQ kFFYJh"
       >
         <button
           aria-label="comments"
@@ -233,10 +233,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="info"
+        class="sc-bdvvtL swdr"
       >
         <div
-          class="infoBox"
+          class="sc-gsDKAQ kFFYJh"
         >
           <button
             aria-label="likes"
@@ -262,7 +262,7 @@ Object {
           0
         </div>
         <div
-          class="infoBox"
+          class="sc-gsDKAQ kFFYJh"
         >
           <button
             aria-label="views"
@@ -288,7 +288,7 @@ Object {
           0
         </div>
         <div
-          class="infoBox"
+          class="sc-gsDKAQ kFFYJh"
         >
           <button
             aria-label="comments"
@@ -318,10 +318,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="info"
+      class="sc-bdvvtL swdr"
     >
       <div
-        class="infoBox"
+        class="sc-gsDKAQ kFFYJh"
       >
         <button
           aria-label="likes"
@@ -347,7 +347,7 @@ Object {
         0
       </div>
       <div
-        class="infoBox"
+        class="sc-gsDKAQ kFFYJh"
       >
         <button
           aria-label="views"
@@ -373,7 +373,7 @@ Object {
         0
       </div>
       <div
-        class="infoBox"
+        class="sc-gsDKAQ kFFYJh"
       >
         <button
           aria-label="comments"

@@ -1,5 +1,5 @@
 import { fetchUserInfo } from './index';
-import { userInfo } from '../../shared/js/user-info';
+import { userInfo } from '../../shared/user-info';
 
 test('check userInfo function', async () => {
   const expected = { ...userInfo };

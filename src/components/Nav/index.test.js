@@ -39,7 +39,7 @@ describe('Check Nav text content rendering', () => {
   });
 });
 
-describe('routes pathes', () => {
+describe('routes paths', () => {
   test('news (home)', () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(

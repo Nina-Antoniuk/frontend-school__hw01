@@ -1,34 +1,48 @@
 import React from 'react';
+import styled from 'styled-components';
 import IconButton from '@mui/material/IconButton';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 import { PropTypes } from 'prop-types';
-import styles from './CardAction.module.scss';
 
+const Info = styled.div`
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+`;
+const InfoBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+`;
 const CardAction = function CardAction({ heart, views, comments }) {
   return (
-    <div className={styles.info}>
-      <div className={styles.infoBox}>
+    <Info>
+      <InfoBox>
         <IconButton aria-label="likes">
           <FavoriteBorderIcon sx={{ color: '#f33958' }} />
         </IconButton>
         {heart}
-      </div>
-      <div className={styles.infoBox}>
+      </InfoBox>
+
+      <InfoBox>
         <IconButton aria-label="views">
           <RemoveRedEyeOutlinedIcon sx={{ color: '#f33958' }} />
         </IconButton>
         {views}
-      </div>
+      </InfoBox>
 
-      <div className={styles.infoBox}>
+      <InfoBox>
         <IconButton aria-label="comments">
           <MessageOutlinedIcon sx={{ color: '#f33958' }} />
         </IconButton>
         {comments}
-      </div>
-    </div>
+      </InfoBox>
+    </Info>
   );
 };
 

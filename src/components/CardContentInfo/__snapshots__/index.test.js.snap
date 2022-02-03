@@ -10,7 +10,7 @@ Object {
       >
         <video
           autoplay=""
-          class="video"
+          class="sc-bdvvtL krScMY"
           controls=""
           loop=""
           preload="auto"
@@ -30,7 +30,7 @@ Object {
     >
       <video
         autoplay=""
-        class="video"
+        class="sc-bdvvtL krScMY"
         controls=""
         loop=""
         preload="auto"
@@ -107,7 +107,7 @@ Object {
       >
         <img
           alt="placeholder"
-          class="placeholder"
+          class="sc-gsDKAQ cJsaEh"
           src="https://via.placeholder.com/250x300.png?text=video+is+not+available"
         />
         <p
@@ -124,7 +124,7 @@ Object {
     >
       <img
         alt="placeholder"
-        class="placeholder"
+        class="sc-gsDKAQ cJsaEh"
         src="https://via.placeholder.com/250x300.png?text=video+is+not+available"
       />
       <p

@@ -5,29 +5,125 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <header>
-        <p>
-          Mocked Nav component
-        </p>
-      </header>
-      <main>
-        <p>
-          Mocked Routes component
-        </p>
-      </main>
+      <div
+        class="sc-iCfMLu bFkMKs"
+      >
+        <div
+          class="sc-furwcr fIWYgU"
+        >
+          <header
+            class="sc-pVTFL iwxOEs"
+          >
+            <p>
+              Mocked Nav component
+            </p>
+            <div
+              class="sc-dkPtRN lmmvKR"
+            >
+              <svg
+                class="sc-bdvvtL fSQoBZ"
+                theme="light"
+              >
+                icon-sun.svg
+              </svg>
+              <div
+                class="sc-hKwDye irbxoN"
+              >
+                <input
+                  aria-label="Переключить между тёмной и светлой темой"
+                  class="sc-eCImPb hxUlRI"
+                  id="theme-switch-toggle"
+                  name="theme"
+                  type="checkbox"
+                />
+                <label
+                  aria-hidden="true"
+                  class="sc-jRQBWg kmpWMq"
+                  color="1"
+                  for="theme-switch-toggle"
+                />
+                <div
+                  aria-hidden="true"
+                  class="sc-gKclnd kBNUf"
+                  color="1"
+                />
+              </div>
+              <svg
+                class="sc-gsDKAQ hnBhTn"
+                theme="light"
+              >
+                icon-moon.svg
+              </svg>
+            </div>
+          </header>
+          <main>
+            <p>
+              Mocked Routes component
+            </p>
+          </main>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <header>
-      <p>
-        Mocked Nav component
-      </p>
-    </header>
-    <main>
-      <p>
-        Mocked Routes component
-      </p>
-    </main>
+    <div
+      class="sc-iCfMLu bFkMKs"
+    >
+      <div
+        class="sc-furwcr fIWYgU"
+      >
+        <header
+          class="sc-pVTFL iwxOEs"
+        >
+          <p>
+            Mocked Nav component
+          </p>
+          <div
+            class="sc-dkPtRN lmmvKR"
+          >
+            <svg
+              class="sc-bdvvtL fSQoBZ"
+              theme="light"
+            >
+              icon-sun.svg
+            </svg>
+            <div
+              class="sc-hKwDye irbxoN"
+            >
+              <input
+                aria-label="Переключить между тёмной и светлой темой"
+                class="sc-eCImPb hxUlRI"
+                id="theme-switch-toggle"
+                name="theme"
+                type="checkbox"
+              />
+              <label
+                aria-hidden="true"
+                class="sc-jRQBWg kmpWMq"
+                color="1"
+                for="theme-switch-toggle"
+              />
+              <div
+                aria-hidden="true"
+                class="sc-gKclnd kBNUf"
+                color="1"
+              />
+            </div>
+            <svg
+              class="sc-gsDKAQ hnBhTn"
+              theme="light"
+            >
+              icon-moon.svg
+            </svg>
+          </div>
+        </header>
+        <main>
+          <p>
+            Mocked Routes component
+          </p>
+        </main>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

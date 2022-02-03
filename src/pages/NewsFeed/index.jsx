@@ -1,11 +1,31 @@
 import React from 'react';
 import { v4 as uuid } from 'uuid';
 import LoaderComponent from '../../components/LoaderComponent';
-import { STATUSES } from '../../shared/js/consts';
-import styles from './NewsFeed.module.scss';
+import styled from 'styled-components';
+import { STATUSES } from '../../shared/consts';
 import Post from '../../components/Post';
 import { fetchTrends } from 'api/fetchTrends';
+import { size } from '../../shared/css-consts';
 
+const Section = styled.section`
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+
+  @media screen and (min-width: ${size.tabletS}) {
+    padding-top: 50px;
+  }
+`;
+const PostList = styled.ul`
+  max-width: 80%;
+  padding-left: 0;
+  list-style-type: none;
+
+  @media screen and (min-width: ${size.tabletS}) {
+    max-width: 70%;
+    margin-left: 20%;
+  }
+`;
 const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
 
 const NewsFeed = function NewsFeed() {
@@ -45,9 +65,9 @@ const NewsFeed = function NewsFeed() {
 
   if (status === RESOLVE) {
     return (
-      <section className="section">
+      <Section>
         {trends ? (
-          <ul className={styles.postsList}>
+          <PostList>
             {trends.map((trend) => (
               <Post
                 key={uuid()}
@@ -58,11 +78,11 @@ const NewsFeed = function NewsFeed() {
                 heart={trend.authorStats.heart}
               />
             ))}
-          </ul>
+          </PostList>
         ) : (
           <p>No data came from the server</p>
         )}
-      </section>
+      </Section>
     );
   }
 };

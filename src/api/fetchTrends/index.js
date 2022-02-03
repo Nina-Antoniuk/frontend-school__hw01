@@ -1,4 +1,4 @@
-import { API_CONSTS } from '../../shared/js/consts';
+import { API_CONSTS } from '../../shared/consts';
 
 const { BASE_URL, HOST, API_KEY } = API_CONSTS;
 

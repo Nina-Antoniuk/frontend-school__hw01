@@ -20,6 +20,7 @@
     "react-js-loader": "^0.1.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.3",
     "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },
@@ -27,7 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:coverage":"react-scripts test --coverage",
+    "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p",
