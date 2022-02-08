@@ -1,10 +1,10 @@
 import React from 'react';
 import Nav from '../Nav';
-import ThemeSwitcher from '../ThemeSwitcher';
 import Routes from '../Routes';
 import styled from 'styled-components';
 import { size } from '../../shared/css-consts';
 import { THEME } from '../../shared/consts';
+import { ThemeSwitcher } from 'theme-switcher-element';
 
 const { LIGHT_COLOR: lightTheme, DARK_COLOR: darkTheme } = THEME;
 
@@ -51,7 +51,7 @@ const TukTukApp = function TukTukApp() {
         <Wrapper>
           <Header>
             <Nav />
-            <ThemeSwitcher getThemeState={getThemeState} />
+            {/* <ThemeSwitcher getThemeState={getThemeState} /> */}
           </Header>
           <main>
             <Routes />

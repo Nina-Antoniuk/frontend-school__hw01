@@ -4,7 +4,7 @@ import LoaderComponent from '../../components/LoaderComponent';
 import styled from 'styled-components';
 import { STATUSES } from '../../shared/consts';
 import Post from '../../components/Post';
-import { fetchTrends } from 'api/fetchTrends';
+import { fetchTrends } from '../../api/fetchTrends';
 import { size } from '../../shared/css-consts';
 
 const Section = styled.section`

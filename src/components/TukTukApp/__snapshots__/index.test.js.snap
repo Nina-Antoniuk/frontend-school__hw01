@@ -6,19 +6,19 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-iCfMLu bFkMKs"
+        class="sc-iCfMLu MLgwW"
       >
         <div
-          class="sc-furwcr fIWYgU"
+          class="sc-furwcr iaCmTI"
         >
           <header
-            class="sc-pVTFL iwxOEs"
+            class="sc-pVTFL iexhUs"
           >
             <p>
               Mocked Nav component
             </p>
             <div
-              class="sc-dkPtRN lmmvKR"
+              class="sc-dkPtRN kJKXEJ"
             >
               <svg
                 class="sc-bdvvtL fSQoBZ"
@@ -44,7 +44,7 @@ Object {
                 />
                 <div
                   aria-hidden="true"
-                  class="sc-gKclnd kBNUf"
+                  class="sc-gKclnd gJGqmM"
                   color="1"
                 />
               </div>
@@ -67,19 +67,19 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-iCfMLu bFkMKs"
+      class="sc-iCfMLu MLgwW"
     >
       <div
-        class="sc-furwcr fIWYgU"
+        class="sc-furwcr iaCmTI"
       >
         <header
-          class="sc-pVTFL iwxOEs"
+          class="sc-pVTFL iexhUs"
         >
           <p>
             Mocked Nav component
           </p>
           <div
-            class="sc-dkPtRN lmmvKR"
+            class="sc-dkPtRN kJKXEJ"
           >
             <svg
               class="sc-bdvvtL fSQoBZ"
@@ -105,7 +105,7 @@ Object {
               />
               <div
                 aria-hidden="true"
-                class="sc-gKclnd kBNUf"
+                class="sc-gKclnd gJGqmM"
                 color="1"
               />
             </div>

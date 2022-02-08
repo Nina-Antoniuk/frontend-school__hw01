@@ -26,14 +26,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --stats",
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p",
     "prepare": "husky install",
-    "eslint": "eslint"
+    "eslint": "eslint",
+    "analyze": "webpack-bundle-analyzer build/bundle-stats.json"
   },
   "eslintConfig": {
     "extends": [
@@ -54,10 +55,13 @@
     ]
   },
   "devDependencies": {
+    "esbuild-loader": "^2.18.0",
     "eslint": "^7.32.0",
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2"
   },
   "lint-staged": {
     "*.js,*.jsx": "eslint --cache --fix",

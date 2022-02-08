@@ -11,7 +11,7 @@ Object {
         <li>
           <a
             aria-current="page"
-            class="sc-kfPuZi UywvZ active"
+            class="sc-kfPuZi dqEyJq active"
             href="/"
             testid="newsPage"
           >
@@ -20,7 +20,7 @@ Object {
         </li>
         <li>
           <a
-            class="sc-kfPuZi UywvZ"
+            class="sc-kfPuZi dqEyJq"
             href="/profile/dave.xp"
             testid="profile"
           >
@@ -37,7 +37,7 @@ Object {
       <li>
         <a
           aria-current="page"
-          class="sc-kfPuZi UywvZ active"
+          class="sc-kfPuZi dqEyJq active"
           href="/"
           testid="newsPage"
         >
@@ -46,7 +46,7 @@ Object {
       </li>
       <li>
         <a
-          class="sc-kfPuZi UywvZ"
+          class="sc-kfPuZi dqEyJq"
           href="/profile/dave.xp"
           testid="profile"
         >

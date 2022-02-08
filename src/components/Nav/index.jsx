@@ -38,7 +38,7 @@ const StyledLink = styled(NavLink)`
     color: var(--main-accent-color);
   }
 `;
-console.log(lightThemeColor.textColor);
+
 const Nav = function Nav() {
   return (
     <NavList className="NavList">
