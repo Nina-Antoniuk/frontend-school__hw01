@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "animate.css": "^4.1.1",
+    "custom-theme-switcher": "^1.0.5",
     "enzyme": "^3.11.0",
     "jest": "^26.6.0",
     "node-sass": "^6.0.1",
@@ -60,6 +61,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
+    "theme-switcher-module": "^1.0.15",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2"
   },

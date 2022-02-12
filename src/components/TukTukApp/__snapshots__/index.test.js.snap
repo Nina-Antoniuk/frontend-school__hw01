@@ -6,54 +6,97 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-iCfMLu MLgwW"
+        class="sc-bdvvtL hFwisg"
       >
         <div
-          class="sc-furwcr iaCmTI"
+          class="sc-gsDKAQ ewZRyA"
         >
           <header
-            class="sc-pVTFL iexhUs"
+            class="sc-dkPtRN kKaBkD"
           >
             <p>
               Mocked Nav component
             </p>
-            <div
-              class="sc-dkPtRN kJKXEJ"
-            >
-              <svg
-                class="sc-bdvvtL fSQoBZ"
-                theme="light"
-              >
-                icon-sun.svg
-              </svg>
+            <div />
+            <div>
+              
+    
               <div
-                class="sc-hKwDye irbxoN"
+                class="wrapper"
+                style="display: flex; justify-content: center;"
               >
-                <input
-                  aria-label="Переключить между тёмной и светлой темой"
-                  class="sc-eCImPb hxUlRI"
-                  id="theme-switch-toggle"
-                  name="theme"
-                  type="checkbox"
-                />
-                <label
-                  aria-hidden="true"
-                  class="sc-jRQBWg kmpWMq"
-                  color="1"
-                  for="theme-switch-toggle"
-                />
+                
+      
+                <svg
+                  aria-label="Иконка солнца"
+                  class="lightThemeIconColor"
+                  role="img"
+                  style="width: 26px; height: 26px;"
+                >
+                  
+        
+                  <use
+                    href="sprite.svg#icon-sun"
+                  />
+                  
+      
+                </svg>
+                
+      
                 <div
-                  aria-hidden="true"
-                  class="sc-gKclnd gJGqmM"
-                  color="1"
-                />
+                  class="control"
+                >
+                  
+        
+                  <input
+                    aria-label="Переключить между тёмной и светлой темой"
+                    class="toggle"
+                    id="toggle"
+                    name="theme"
+                    type="checkbox"
+                  />
+                  
+          
+        
+                  <label
+                    aria-hidden="true"
+                    class="track lightThemeTrackColor"
+                    for="toggle"
+                  >
+                    
+        
+                  </label>
+                  
+        
+        
+                  <div
+                    aria-hidden="true"
+                    class="marker"
+                  />
+                  
+      
+                </div>
+                 
+
+      
+                <svg
+                  aria-label="Иконка солнца"
+                  class="icon lightThemeIconColor"
+                  role="img"
+                >
+                  
+        
+                  <use
+                    href="sprite.svg#icon-moon"
+                  />
+                  
+      
+                </svg>
+                
+    
               </div>
-              <svg
-                class="sc-gsDKAQ hnBhTn"
-                theme="light"
-              >
-                icon-moon.svg
-              </svg>
+              
+  
             </div>
           </header>
           <main>
@@ -67,54 +110,97 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-iCfMLu MLgwW"
+      class="sc-bdvvtL hFwisg"
     >
       <div
-        class="sc-furwcr iaCmTI"
+        class="sc-gsDKAQ ewZRyA"
       >
         <header
-          class="sc-pVTFL iexhUs"
+          class="sc-dkPtRN kKaBkD"
         >
           <p>
             Mocked Nav component
           </p>
-          <div
-            class="sc-dkPtRN kJKXEJ"
-          >
-            <svg
-              class="sc-bdvvtL fSQoBZ"
-              theme="light"
-            >
-              icon-sun.svg
-            </svg>
+          <div />
+          <div>
+            
+    
             <div
-              class="sc-hKwDye irbxoN"
+              class="wrapper"
+              style="display: flex; justify-content: center;"
             >
-              <input
-                aria-label="Переключить между тёмной и светлой темой"
-                class="sc-eCImPb hxUlRI"
-                id="theme-switch-toggle"
-                name="theme"
-                type="checkbox"
-              />
-              <label
-                aria-hidden="true"
-                class="sc-jRQBWg kmpWMq"
-                color="1"
-                for="theme-switch-toggle"
-              />
+              
+      
+              <svg
+                aria-label="Иконка солнца"
+                class="lightThemeIconColor"
+                role="img"
+                style="width: 26px; height: 26px;"
+              >
+                
+        
+                <use
+                  href="sprite.svg#icon-sun"
+                />
+                
+      
+              </svg>
+              
+      
               <div
-                aria-hidden="true"
-                class="sc-gKclnd gJGqmM"
-                color="1"
-              />
+                class="control"
+              >
+                
+        
+                <input
+                  aria-label="Переключить между тёмной и светлой темой"
+                  class="toggle"
+                  id="toggle"
+                  name="theme"
+                  type="checkbox"
+                />
+                
+          
+        
+                <label
+                  aria-hidden="true"
+                  class="track lightThemeTrackColor"
+                  for="toggle"
+                >
+                  
+        
+                </label>
+                
+        
+        
+                <div
+                  aria-hidden="true"
+                  class="marker"
+                />
+                
+      
+              </div>
+               
+
+      
+              <svg
+                aria-label="Иконка солнца"
+                class="icon lightThemeIconColor"
+                role="img"
+              >
+                
+        
+                <use
+                  href="sprite.svg#icon-moon"
+                />
+                
+      
+              </svg>
+              
+    
             </div>
-            <svg
-              class="sc-gsDKAQ hnBhTn"
-              theme="light"
-            >
-              icon-moon.svg
-            </svg>
+            
+  
           </div>
         </header>
         <main>

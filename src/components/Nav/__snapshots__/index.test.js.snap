@@ -6,12 +6,12 @@ Object {
   "baseElement": <body>
     <div>
       <ul
-        class="sc-dlVxhl gvuARR NavList"
+        class="sc-hBUSln eFhhml NavList"
       >
         <li>
           <a
             aria-current="page"
-            class="sc-kfPuZi dqEyJq active"
+            class="sc-fotOHu dPQUZC active"
             href="/"
             testid="newsPage"
           >
@@ -20,7 +20,7 @@ Object {
         </li>
         <li>
           <a
-            class="sc-kfPuZi dqEyJq"
+            class="sc-fotOHu dPQUZC"
             href="/profile/dave.xp"
             testid="profile"
           >
@@ -32,12 +32,12 @@ Object {
   </body>,
   "container": <div>
     <ul
-      class="sc-dlVxhl gvuARR NavList"
+      class="sc-hBUSln eFhhml NavList"
     >
       <li>
         <a
           aria-current="page"
-          class="sc-kfPuZi dqEyJq active"
+          class="sc-fotOHu dPQUZC active"
           href="/"
           testid="newsPage"
         >
@@ -46,7 +46,7 @@ Object {
       </li>
       <li>
         <a
-          class="sc-kfPuZi dqEyJq"
+          class="sc-fotOHu dPQUZC"
           href="/profile/dave.xp"
           testid="profile"
         >

@@ -4,7 +4,10 @@ import Routes from '../Routes';
 import styled from 'styled-components';
 import { size } from '../../shared/css-consts';
 import { THEME } from '../../shared/consts';
-import { ThemeSwitcher } from 'theme-switcher-element';
+import Switcher from '../Switcher';
+import customSwitcher from 'theme-switcher-module';
+
+const switcherElementTemplate = customSwitcher.renderOnPage();
 
 const { LIGHT_COLOR: lightTheme, DARK_COLOR: darkTheme } = THEME;
 
@@ -51,7 +54,11 @@ const TukTukApp = function TukTukApp() {
         <Wrapper>
           <Header>
             <Nav />
-            {/* <ThemeSwitcher getThemeState={getThemeState} /> */}
+            <Switcher />
+            <Switcher
+              template={switcherElementTemplate}
+              getThemeState={getThemeState}
+            />
           </Header>
           <main>
             <Routes />
