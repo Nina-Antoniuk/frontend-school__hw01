@@ -91,7 +91,7 @@ const Marker = styled.div`
     props.color === 1 ? 'translateX(3px)' : 'translateX(35px)'};
 `;
 
-const ThemeSwitcher = function ThemeSwitcher(props) {
+const Switcher = function ThemeSwitcher(props) {
   const [state, setState] = React.useState(true);
 
   const toggleTheme = () => {
@@ -128,4 +128,4 @@ const ThemeSwitcher = function ThemeSwitcher(props) {
     </ThemeSwitch>
   );
 };
-export default ThemeSwitcher;
+export default Switcher;

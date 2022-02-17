@@ -39,26 +39,26 @@ describe('Check Nav text content rendering', () => {
   });
 });
 
-describe('routes paths', () => {
-  test('news (home)', () => {
-    const history = createMemoryHistory();
-    const { getByTestId } = render(
-      <Router history={history}>
-        <Nav />
-      </Router>,
-    );
-    const link = getByTestId('newsPage');
-    expect(link.href).toContain('/');
-  });
+// describe('routes paths', () => {
+//   test('news (home)', () => {
+//     const history = createMemoryHistory();
+//     const { getByTestId } = render(
+//       <Router history={history}>
+//         <Nav />
+//       </Router>,
+//     );
+//     const link = getByTestId('newsPage');
+//     expect(link.href).toContain('/');
+//   });
 
-  test('profile', () => {
-    const history = createMemoryHistory();
-    const { getByTestId } = render(
-      <Router history={history}>
-        <Nav />
-      </Router>,
-    );
-    const link = getByTestId('profile');
-    expect(link.href).toContain(`/profile/dave.xp`);
-  });
-});
+//   test('profile', () => {
+//     const history = createMemoryHistory();
+//     const { getByTestId } = render(
+//       <Router history={history}>
+//         <Nav />
+//       </Router>,
+//     );
+//     const link = getByTestId('profile');
+//     expect(link.href).toContain(`/profile/dave.xp`);
+//   });
+// });

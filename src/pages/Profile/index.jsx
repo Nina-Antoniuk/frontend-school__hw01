@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import UserProfile from '../../components/UserProfile';
 import LoaderComponent from '../../components/LoaderComponent';
-import { fetchUserInfo } from 'api/fetchUserInfo';
+import { fetchUserInfo } from '../../api/fetchUserInfo';
 import { STATUSES } from '../../shared/consts';
 
 const Section = styled.section`
