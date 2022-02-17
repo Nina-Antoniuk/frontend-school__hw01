@@ -45,7 +45,7 @@ const TukTukApp = function TukTukApp() {
   const [theme, setTheme] = React.useState(lightTheme.type);
 
   const getThemeState = React.useCallback((value) => {
-    console.log(value);
+    console.log('theme', value);
     setTheme(value === lightTheme.type ? darkTheme.type : lightTheme.type);
   }, []);
 

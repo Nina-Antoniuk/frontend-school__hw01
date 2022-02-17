@@ -6,15 +6,6 @@ Object {
   "baseElement": <body>
     <div>
       <div
-<<<<<<< HEAD
-        class="sc-iCfMLu MLgwW"
-      >
-        <div
-          class="sc-furwcr iaCmTI"
-        >
-          <header
-            class="sc-pVTFL iexhUs"
-=======
         class="sc-bdvvtL hFwisg"
       >
         <div
@@ -22,26 +13,13 @@ Object {
         >
           <header
             class="sc-dkPtRN kKaBkD"
->>>>>>> modules
           >
             <p>
               Mocked Nav component
             </p>
-<<<<<<< HEAD
-            <div
-              class="sc-dkPtRN kJKXEJ"
-            >
-              <svg
-                class="sc-bdvvtL fSQoBZ"
-                theme="light"
-              >
-                icon-sun.svg
-              </svg>
-=======
             <div>
               
     
->>>>>>> modules
               <div
                 class="wrapper"
               >
@@ -64,12 +42,6 @@ Object {
                 
       
                 <div
-<<<<<<< HEAD
-                  aria-hidden="true"
-                  class="sc-gKclnd gJGqmM"
-                  color="1"
-                />
-=======
                   class="control"
                 >
                   
@@ -120,7 +92,6 @@ Object {
                 </svg>
                 
     
->>>>>>> modules
               </div>
               
   
@@ -137,15 +108,6 @@ Object {
   </body>,
   "container": <div>
     <div
-<<<<<<< HEAD
-      class="sc-iCfMLu MLgwW"
-    >
-      <div
-        class="sc-furwcr iaCmTI"
-      >
-        <header
-          class="sc-pVTFL iexhUs"
-=======
       class="sc-bdvvtL hFwisg"
     >
       <div
@@ -153,26 +115,13 @@ Object {
       >
         <header
           class="sc-dkPtRN kKaBkD"
->>>>>>> modules
         >
           <p>
             Mocked Nav component
           </p>
-<<<<<<< HEAD
-          <div
-            class="sc-dkPtRN kJKXEJ"
-          >
-            <svg
-              class="sc-bdvvtL fSQoBZ"
-              theme="light"
-            >
-              icon-sun.svg
-            </svg>
-=======
           <div>
             
     
->>>>>>> modules
             <div
               class="wrapper"
             >
@@ -195,12 +144,6 @@ Object {
               
       
               <div
-<<<<<<< HEAD
-                aria-hidden="true"
-                class="sc-gKclnd gJGqmM"
-                color="1"
-              />
-=======
                 class="control"
               >
                 
@@ -251,7 +194,6 @@ Object {
               </svg>
               
     
->>>>>>> modules
             </div>
             
   

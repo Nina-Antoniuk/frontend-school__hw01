@@ -4,8 +4,7 @@ import LoaderComponent from '../../components/LoaderComponent';
 import styled from 'styled-components';
 import { STATUSES } from '../../shared/consts';
 import Post from '../../components/Post';
-import { fetchTrends } from 'api/fetchTrends';
-import { feedData } from '../../shared/trending-feeds';
+import { fetchTrends } from '../../api/fetchTrends';
 import { size } from '../../shared/css-consts';
 
 const Section = styled.section`
@@ -69,8 +68,7 @@ const NewsFeed = function NewsFeed() {
       <Section>
         {trends ? (
           <PostList>
-            {/* {trends.map((trend) => ( */}
-            {feedData.map((trend) => (
+            {trends.map((trend) => (
               <Post
                 key={uuid()}
                 video={trend.video.playAddr}
