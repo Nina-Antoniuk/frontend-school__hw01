@@ -6,14 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="userProfile"
+        class="sc-bdvvtL iWbtYW"
       >
         <div
-          class="thumb"
+          class="sc-gsDKAQ lmdQoJ"
         >
           <img
             alt="Test Nickname"
-            class="userAvatar"
+            class="sc-dkPtRN jOxedf"
             data-testid="userAvatar"
             height="300"
             src="http://localhost/test%20src"
@@ -21,11 +21,11 @@ Object {
           />
         </div>
         <div
-          class="userInfo"
+          class="sc-hKwDye ljwhGh"
         >
           <p>
             <span
-              class="field"
+              class="sc-eCImPb hHpyYW"
             >
               User name
             </span>
@@ -36,7 +36,7 @@ Object {
           </p>
           <p>
             <span
-              class="field"
+              class="sc-eCImPb hHpyYW"
             >
               Signature
             </span>
@@ -49,14 +49,14 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="userProfile"
+      class="sc-bdvvtL iWbtYW"
     >
       <div
-        class="thumb"
+        class="sc-gsDKAQ lmdQoJ"
       >
         <img
           alt="Test Nickname"
-          class="userAvatar"
+          class="sc-dkPtRN jOxedf"
           data-testid="userAvatar"
           height="300"
           src="http://localhost/test%20src"
@@ -64,11 +64,11 @@ Object {
         />
       </div>
       <div
-        class="userInfo"
+        class="sc-hKwDye ljwhGh"
       >
         <p>
           <span
-            class="field"
+            class="sc-eCImPb hHpyYW"
           >
             User name
           </span>
@@ -79,7 +79,7 @@ Object {
         </p>
         <p>
           <span
-            class="field"
+            class="sc-eCImPb hHpyYW"
           >
             Signature
           </span>

@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import NewsFeed from '../../pages/NewsFeed';
 import Profile from '../../pages/Profile';
 import LoaderComponent from '../LoaderComponent';
-import { ROUTES } from '../../shared/js/consts';
+import { ROUTES } from '../../shared/consts';
 
 const Routes = function Routes() {
   return (

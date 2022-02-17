@@ -46,7 +46,7 @@ Object {
         >
           <video
             autoplay=""
-            class="video"
+            class="sc-bdvvtL kkfRzg"
             controls=""
             loop=""
             preload="auto"
@@ -59,10 +59,10 @@ Object {
           </p>
         </div>
         <div
-          class="info"
+          class="sc-dkPtRN dgYmVy"
         >
           <div
-            class="infoBox"
+            class="sc-hKwDye cuRkJO"
           >
             <button
               aria-label="likes"
@@ -88,7 +88,7 @@ Object {
             50
           </div>
           <div
-            class="infoBox"
+            class="sc-hKwDye cuRkJO"
           >
             <button
               aria-label="views"
@@ -114,7 +114,7 @@ Object {
             200
           </div>
           <div
-            class="infoBox"
+            class="sc-hKwDye cuRkJO"
           >
             <button
               aria-label="comments"
@@ -185,7 +185,7 @@ Object {
       >
         <video
           autoplay=""
-          class="video"
+          class="sc-bdvvtL kkfRzg"
           controls=""
           loop=""
           preload="auto"
@@ -198,10 +198,10 @@ Object {
         </p>
       </div>
       <div
-        class="info"
+        class="sc-dkPtRN dgYmVy"
       >
         <div
-          class="infoBox"
+          class="sc-hKwDye cuRkJO"
         >
           <button
             aria-label="likes"
@@ -227,7 +227,7 @@ Object {
           50
         </div>
         <div
-          class="infoBox"
+          class="sc-hKwDye cuRkJO"
         >
           <button
             aria-label="views"
@@ -253,7 +253,7 @@ Object {
           200
         </div>
         <div
-          class="infoBox"
+          class="sc-hKwDye cuRkJO"
         >
           <button
             aria-label="comments"
@@ -381,7 +381,7 @@ Object {
         >
           <img
             alt="placeholder"
-            class="placeholder"
+            class="sc-gsDKAQ cJsaEh"
             src="https://via.placeholder.com/250x300.png?text=video+is+not+available"
           />
           <p
@@ -389,10 +389,10 @@ Object {
           />
         </div>
         <div
-          class="info"
+          class="sc-dkPtRN dgYmVy"
         >
           <div
-            class="infoBox"
+            class="sc-hKwDye cuRkJO"
           >
             <button
               aria-label="likes"
@@ -418,7 +418,7 @@ Object {
             0
           </div>
           <div
-            class="infoBox"
+            class="sc-hKwDye cuRkJO"
           >
             <button
               aria-label="views"
@@ -444,7 +444,7 @@ Object {
             0
           </div>
           <div
-            class="infoBox"
+            class="sc-hKwDye cuRkJO"
           >
             <button
               aria-label="comments"
@@ -515,7 +515,7 @@ Object {
       >
         <img
           alt="placeholder"
-          class="placeholder"
+          class="sc-gsDKAQ cJsaEh"
           src="https://via.placeholder.com/250x300.png?text=video+is+not+available"
         />
         <p
@@ -523,10 +523,10 @@ Object {
         />
       </div>
       <div
-        class="info"
+        class="sc-dkPtRN dgYmVy"
       >
         <div
-          class="infoBox"
+          class="sc-hKwDye cuRkJO"
         >
           <button
             aria-label="likes"
@@ -552,7 +552,7 @@ Object {
           0
         </div>
         <div
-          class="infoBox"
+          class="sc-hKwDye cuRkJO"
         >
           <button
             aria-label="views"
@@ -578,7 +578,7 @@ Object {
           0
         </div>
         <div
-          class="infoBox"
+          class="sc-hKwDye cuRkJO"
         >
           <button
             aria-label="comments"

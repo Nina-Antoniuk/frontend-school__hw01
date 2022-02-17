@@ -1,5 +1,5 @@
 import { fetchTrends } from './index';
-import { feedData } from '../../shared/js/trending-feeds';
+import { feedData } from '../../shared/trending-feeds';
 
 test('check fetchTrends function', async () => {
   const expected = [...feedData];

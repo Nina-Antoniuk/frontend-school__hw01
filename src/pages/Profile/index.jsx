@@ -1,11 +1,14 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import styled from 'styled-components';
 import UserProfile from '../../components/UserProfile';
 import LoaderComponent from '../../components/LoaderComponent';
 import { fetchUserInfo } from 'api/fetchUserInfo';
-import { STATUSES } from '../../shared/js/consts';
-import styles from './Profile.module.scss';
+import { STATUSES } from '../../shared/consts';
 
+const Section = styled.section`
+  padding-top: 30px;
+`;
 const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
 
 const Profile = function Profile() {
@@ -46,9 +49,9 @@ const Profile = function Profile() {
 
   if (status === RESOLVE) {
     return (
-      <section className={styles.section}>
+      <Section>
         <UserProfile user={userInfo} />
-      </section>
+      </Section>
     );
   }
 };

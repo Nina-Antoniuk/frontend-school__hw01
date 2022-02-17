@@ -5,63 +5,55 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav
-        class="Nav"
-      >
-        <ul
-          class="NavList"
-        >
-          <li>
-            <a
-              aria-current="page"
-              class="NavLink activeLink"
-              data-testid="newsPage"
-              href="/"
-            >
-              News
-            </a>
-          </li>
-          <li>
-            <a
-              class="NavLink"
-              data-testid="profile"
-              href="/profile/dave.xp"
-            >
-              Profile
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </body>,
-  "container": <div>
-    <nav
-      class="Nav"
-    >
       <ul
-        class="NavList"
+        class="sc-dlVxhl gvuARR NavList"
       >
         <li>
           <a
             aria-current="page"
-            class="NavLink activeLink"
-            data-testid="newsPage"
+            class="sc-kfPuZi dqEyJq active"
             href="/"
+            testid="newsPage"
           >
             News
           </a>
         </li>
         <li>
           <a
-            class="NavLink"
-            data-testid="profile"
+            class="sc-kfPuZi dqEyJq"
             href="/profile/dave.xp"
+            testid="profile"
           >
             Profile
           </a>
         </li>
       </ul>
-    </nav>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="sc-dlVxhl gvuARR NavList"
+    >
+      <li>
+        <a
+          aria-current="page"
+          class="sc-kfPuZi dqEyJq active"
+          href="/"
+          testid="newsPage"
+        >
+          News
+        </a>
+      </li>
+      <li>
+        <a
+          class="sc-kfPuZi dqEyJq"
+          href="/profile/dave.xp"
+          testid="profile"
+        >
+          Profile
+        </a>
+      </li>
+    </ul>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
