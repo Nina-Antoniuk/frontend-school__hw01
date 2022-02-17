@@ -44,9 +44,10 @@ export const ThemeContext = React.createContext();
 const TukTukApp = function TukTukApp() {
   const [theme, setTheme] = React.useState(lightTheme.type);
 
-  const getThemeState = (value) => {
-    setTheme(!value ? darkTheme.type : lightTheme.type);
-  };
+  const getThemeState = React.useCallback((value) => {
+    console.log(value);
+    setTheme(value === lightTheme.type ? darkTheme.type : lightTheme.type);
+  }, []);
 
   return (
     <ThemeContext.Provider value={theme}>
@@ -54,7 +55,6 @@ const TukTukApp = function TukTukApp() {
         <Wrapper>
           <Header>
             <Nav />
-            <Switcher />
             <Switcher
               template={switcherElementTemplate}
               getThemeState={getThemeState}
