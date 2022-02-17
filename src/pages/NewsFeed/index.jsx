@@ -6,6 +6,7 @@ import { STATUSES } from '../../shared/consts';
 import Post from '../../components/Post';
 import { fetchTrends } from '../../api/fetchTrends';
 import { size } from '../../shared/css-consts';
+import { feedData } from '../../shared/trending-feeds';
 
 const Section = styled.section`
   display: flex;
@@ -68,7 +69,8 @@ const NewsFeed = function NewsFeed() {
       <Section>
         {trends ? (
           <PostList>
-            {trends.map((trend) => (
+            {/* {trends.map((trend) => ( */}
+            {feedData.map((trend) => (
               <Post
                 key={uuid()}
                 video={trend.video.playAddr}
