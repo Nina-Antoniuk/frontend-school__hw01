@@ -5,6 +5,7 @@ import { STATUSES } from '../../shared/js/consts';
 import styles from './NewsFeed.module.scss';
 import Post from '../../components/Post';
 import { fetchTrends } from 'api/fetchTrends';
+import { feedData } from 'shared/js/trending-feeds';
 
 const { PENDING, RESOLVE, REJECT, INIT } = STATUSES;
 
@@ -48,7 +49,8 @@ const NewsFeed = function NewsFeed() {
       <section className="section">
         {trends ? (
           <ul className={styles.postsList}>
-            {trends.map((trend) => (
+            {/* {trends.map((trend) => ( */}
+            {feedData.map((trend) => (
               <Post
                 key={uuid()}
                 video={trend.video.playAddr}
